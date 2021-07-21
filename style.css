@@ -1,29 +1,51 @@
 .app {
   display: flex;
-  height: 500px;
+  flex-direction: column;
+  align-items: center;  
+  height: 100vh;
+  width: 100vw;
+  background-color: lightblue;
 }
 
 .headings {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .brush-selection {
   height: 70px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .paint {
   height: 250px;
   display: flex;
+  flex-direction: column;
 }
 
 .palette {
-  display: flex;
+  display: flex;    
+  flex-wrap: wrap;
+  width: 200px;
   margin-left: -30px;
+}
+
+.secondPalette {
+  display: flex;    
+  flex-wrap: wrap;
+  width: 200px;
+  margin-left: 30px;
 }
 
 .brush {
   display: flex;
+  
 }
 
 .icon {
@@ -39,10 +61,10 @@
 
 .canvas {
   display: grid;
-  grid-template-rows: repeat(10, 1fr);
-  grid-template-columns: repeat(10, 1fr);
   height: 300px;
   width: 300px;
+  grid-template-rows: repeat(60, 1fr);
+  grid-template-columns: repeat(60, 1fr);
   border: 1px solid black;
 }
 
@@ -51,21 +73,41 @@
 }
 
 .color-1 {
-
+  background-color: blue;
 }
 
 .color-2 {
-
+  background-color: red;
 }
 
 .color-3 {
-
+  background-color: magenta;
 }
 
 .color-4 {
-
+  background-color: orange;
 }
 
 .color-5 {
+  background-color: white;
+}
 
+.color-6 {
+  background-color: black;
+}
+
+.color-7 {
+  background-color: mediumslateblue;
+}
+
+.color-8 {
+  background-color: lemonchiffon;
+}
+
+.color-9 {
+  background-color: maroon;
+}
+
+.color-10 {
+  background-color: green;
 }
